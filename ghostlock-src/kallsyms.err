@@ -1,0 +1,42 @@
+[+] Version string: Linux version 6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k (kleaf@build-host) (Android (14043575, +pgo, +bolt, +lto, +mlgo, based on r536225) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project b3a530ec6537146650e42be89f1089e9a3588460), LLD 19.0.1) #1 SMP PREEMPT Wed Nov 26 11:16:14 UTC 2025
+[+]   Other related strings containing the version number: [b'Linux version 6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k (kleaf@build-host) (Android (14043575, +pgo, +bolt, +lto, +mlgo, based on r536225) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project b3a530ec6537146650e42be89f1089e9a3588460), LLD 19.0.1) #1 SMP PREEMPT Wed Nov 26 11:16:14 UTC 2025', b'6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k SMP preempt mod_unload modversions aarch64', b'Linux version 6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k (kleaf@build-host) (Android (14043575, +pgo, +bolt, +lto, +mlgo, based on r536225) clang version 19.0.1 (https://android.googlesource.com/toolchain/llvm-project b3a530ec6537146650e42be89f1089e9a3588460), LLD 19.0.1) #1 SMP PREEMPT Wed Nov 26 11:16:14 UTC 2025', b'6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k', b'/lib/firmware/6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k', b'/lib/firmware/updates/6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k', b'6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k', b'6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k']
+[+]   Architecture string: mod_unload modversions aarch64
+[+] Guessed architecture: aarch64 successfully in 0.00 seconds
+[+] Kernel found in database
+[+]   Read kernel source: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/?id=v6.12
+[+]   Download kernel: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/snapshot/v6.12.tar.gz
+[+]   Kernel release date: 2024-11-17
+[+]   Interesting files:
+[~]     - kernel/kallsyms.c: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/kernel/kallsyms.c?id=v6.12
+[~]     - scripts/kallsyms.c: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/scripts/kallsyms.c?id=v6.12
+[~]     - include/linux/elf.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/linux/elf.h?id=v6.12
+[~]     - include/uapi/linux/elf-em.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/elf-em.h?id=v6.12
+[~]     - include/uapi/linux/elf.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/include/uapi/linux/elf.h?id=v6.12
+[~]     - Documentation/process/changes.rst: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/process/changes.rst?id=v6.12
+[+]   Architecture arm64 (EM_AARCH64) supports 64-bit, big-endian, little-endian
+[~]     - Documentation/arch/arm64/booting.rst: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/Documentation/arch/arm64/booting.rst?id=v6.12
+[~]     - arch/arm64/kernel/vmlinux.lds.S: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/kernel/vmlinux.lds.S?id=v6.12
+[~]     - arch/arm64/kernel/head.S: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/kernel/head.S?id=v6.12
+[~]     - arch/arm64/kernel/Makefile: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/kernel/Makefile?id=v6.12
+[~]     - arch/arm64/boot/Makefile: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/boot/Makefile?id=v6.12
+[~]     - arch/arm64/include/asm/elf.h: https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm64/include/asm/elf.h?id=v6.12
+[+]   Suggested build environment: docker run -it debian/bookworm (Debian 12.0 "Bookworm" released 2023-06-10)
+[+] Found kallsyms_token_table at file offset 0x015f1180
+[+] Found kallsyms_token_index at file offset 0x015f1510
+[+] Found kallsyms_markers at file offset 0x015f09d0
+[+] Found kallsyms_names at file offset 0x0140a568 (125508 symbols)
+[+] Found kallsyms_num_syms at file offset 0x0140a560
+[!] WARNING: Less than half (0%) of offsets are negative
+             You may want to re-run this utility, overriding the relative base
+[!] WARNING: More than half (100%) of offsets look like absolute addresses
+[!]          You may want to re-run this utility, overriding the relative base
+[+] Note: sometimes there is junk at the beginning of the kernel, and the load address is not the guessed
+          base address. You may need to play around with different load addresses to get everything
+          to line up. There may be some decent tables in the kernel with known patterns that could be
+          used to line things up heuristically, but this has not been explored this yet.
+[+] Negative offsets overall: 0 %
+[+] Null addresses overall: 0 %
+[+] Found kallsyms_offsets at file offset 0x015f1710
+[+] Guessed the base address using the first_symbol_virtual_address fallback heuristic (ffffffc080000000)
+[+] Symbol types => ['B', 'D', 'R', 'T', 'V', 'W', 'b', 'd', 'r', 't']
+

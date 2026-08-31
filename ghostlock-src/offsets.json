@@ -1,0 +1,34 @@
+[
+  {
+    "release": "6.12.23-android16-5-g5a0e85dd9db0-ab14499855-4k",
+    "kernel_phys_load": 3347054592,
+    "pselect_waiter_shift": 0,
+    "symbols": {
+      "off_init_task": 37670656,
+      "off_init_cred": 37759592,
+      "off_root_task_group": 39961984,
+      "off_selinux_enforcing": 40273136,
+      "off_selinux_blob_sizes": 25359592,
+      "off_slide_nfulnl_logger": 37626264,
+      "off_slide_loggers_0_1": 37626088,
+      "off_slide_boot_id": 40409192
+    },
+    "struct_fields": {
+      "task_prio": 148,
+      "task_normal_prio": 156,
+      "task_sched_task_group": 1056,
+      "task_pi_lock": 2540,
+      "task_pi_waiters": 2560,
+      "task_pi_top_task": 2576,
+      "task_pi_blocked_on": 2584,
+      "task_pid": 1800,
+      "task_tgid": 1804,
+      "task_atomic_flags": 1736,
+      "task_real_cred": 2296,
+      "task_cred": 2304,
+      "task_comm": 2320,
+      "task_tasks": 1592,
+      "task_seccomp": 2504
+    }
+  }
+]
